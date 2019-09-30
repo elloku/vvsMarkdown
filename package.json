@@ -1,7 +1,7 @@
 {
   "name": "vvsmarkdown",
   "version": "0.1.0",
-  "main":"main.js",
+  "main": "main.js",
   "private": true,
   "dependencies": {
     "react": "^16.10.1",
@@ -13,7 +13,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev":"electron ."
+    "dev": "concurrently \"wait-on http://localhost:3000 && electron .\" \"cross-env BROWSER=none npm start\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -31,7 +31,10 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^4.1.2",
+    "cross-env": "^6.0.0",
     "electron": "^6.0.10",
-    "electron-is-dev": "^1.1.0"
+    "electron-is-dev": "^1.1.0",
+    "wait-on": "^3.3.0"
   }
 }

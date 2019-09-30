@@ -8,7 +8,9 @@ Electron+React+七牛云 实现跨平台桌面级应用
 
 # 配置开发环境
     创建react文件：npx create-react-app [filename...]
-        添加依赖：npm install electron --save-dev （将react继承到electron中）
-                 npm install electron-is-dev --save-dev(用来判断是生产环境还是开发环境)
-
+    添加依赖：npm install electron --save-dev （将react集成到electron中）
+             npm install electron-is-dev --save-dev (用来判断是生产环境还是开发环境)
+             npm install concurrently --save-dev (并发执行npm命令)
+             npm install wait-on --save-dev (用来等待某个file/ports/sockets/https资源释放)
+             npm install cross-env --save-dev (用来解决跨平台的环境变量设置问题))
 
