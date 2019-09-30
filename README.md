@@ -7,8 +7,8 @@ Electron+React+七牛云 实现跨平台桌面级应用
         七牛云对象存储 负责本地文件同步到云端，提供上传下载的服务
 
 # 配置开发环境
-  创建react文件：npx create-react-app [filename...]
-    添加依赖：npm install electron --save-dev （将react继承到electron中）
+    创建react文件：npx create-react-app [filename...]
+        添加依赖：npm install electron --save-dev （将react继承到electron中）
              npm install electron-is-dev --save-dev(用来判断是生产环境还是开发环境)
 
 
